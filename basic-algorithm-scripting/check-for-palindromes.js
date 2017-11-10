@@ -41,6 +41,7 @@ palindrome("_EYEEY*****");
 
 /** ====================================
                 My new solution
+             Refactoring my code
     ==================================== **/
 
 
@@ -57,6 +58,21 @@ function palindrome(str) {
   
 return bool;
 
+}
+
+palindrome("_EYEEY*****");
+
+
+/** ====================================
+                My new solution
+       Refactoring my code even more
+    ==================================== **/
+
+
+function palindrome(str) {
+  str = str.toLowerCase().replace(/[^a-z0-9]/g, "");
+  var strRev = str.split("").reverse().join("");
+  return str === strRev;
 }
 
 palindrome("_EYEEY*****");
