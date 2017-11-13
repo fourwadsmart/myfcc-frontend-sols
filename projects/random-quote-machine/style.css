@@ -1,0 +1,85 @@
+#main {
+  width: 100%;
+  background-color: white;
+}
+
+#title {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  
+}
+
+#title h1 {
+  font-size: 30px;
+  font-family: 'Baloo Bhaijaan', cursive;
+  line-height: 20px;
+  padding-bottom: 20px;
+}
+
+#title h3 {
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 20px;
+}
+
+.mcontent {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 300px;
+  text-align: center;
+}
+
+blockquote {
+  padding: 50px 10px;
+  margin-bottom: 20px;
+  min-height: 300px;
+}
+#quotetext, .quotetext {
+  font-family: 'Courgette', cursive;
+  font-size: 40px;
+  line-height: 45px;
+  margin-bottom: 10px;
+}
+
+#quoteauthor, .quoteauthor {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+}
+
+button, #getquote {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  
+}
+
+button:hover {
+  cursor: pointer;
+  background: #101010;
+}
+
+#sharequote {
+  background-color: #0084b4;
+}
+
+#footer-msg {
+  width: 90%;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'VT323', monospace;
+  border-bottom: 1px solid lavender;
+}
+
+#footer-msg p {
+  margin: 20px;
+}

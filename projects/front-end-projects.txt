@@ -1,0 +1,4 @@
+            10 front-end projects submitted
+            
+            1- Wikipedia Viewer
+            2- Random Quote Machine
