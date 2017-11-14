@@ -1,0 +1,246 @@
+/*****************
+- Twitch Purple -
+RGB: 100, 65, 164
+Hex: #6441A4
+******************/
+
+@import url('https://fonts.googleapis.com/css?family=Bungee+Hairline|Oswald|Pathway+Gothic+One|Roboto|Ubuntu');
+
+/** For screen smaller or equal to 615px **/
+@media (max-width: 615px) {
+  #footer {
+    width: 95%;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #users {
+    width: 95%;
+    background: white;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: #080808;
+  }
+  
+  .streaming {
+    position: absolute;
+    margin: 15px 5px 0;
+    text-align: left;
+    max-width: 40%;
+    height: 50px;
+    font-size: 14px;
+    font-family: 'Pathway Gothic One', sans-serif;
+  }
+  
+  .usr-info {
+    display: block;
+    float: left;
+    color: #6441A4;
+    font-size: 14px;
+    height: 100%;
+    margin: 15px 5px 0;
+    text-align: center;
+  }
+  
+  .channel-id {
+    min-width: 70px;
+  }
+  #usr-header {
+    width: 100%;
+    height: 48px;
+    background: #38255b;
+    margin: 0 auto;
+    margin-bottom: -15px;
+    color: white;
+    font-size: 16px;
+  }
+  #usr-header div {
+    width: 32%;
+    padding: 15px;
+    margin-left: -3px;
+    display: inline-block;
+    text-align: center;
+    border-right: 1px solid lavender;
+  }
+  
+  #usr-header div:first-child {
+    width: 34%;
+  }
+  
+  #usr-header div:last-child {
+    width: 34%;
+    margin-left: -1px;
+  }
+}
+
+/** For screen bigger than 615px **/
+@media (min-width: 616px) {
+  #users {
+    width: 600px;
+    background: white;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #080808;
+  }
+  
+  .usr-info {
+    display: block;
+    float: left;
+    color: #6441A4;
+    font-size: 14px;
+    height: 100%;
+    margin: 15px 5px 0;
+    text-align: center;
+  }
+  
+  .channel-id {
+    min-width: 110px;
+  }
+  
+  .streaming {
+    position: absolute;
+    margin: 15px 5px 0;
+    text-align: left;
+    max-width: 310px;
+    height: 50px;
+    font-size: 14px;
+    font-family: 'Pathway Gothic One', sans-serif;
+  }
+  
+  #usr-header {
+    width: 100%;
+    height: 49px;
+    background: #38255b;
+    margin: 0 auto;
+    margin-bottom: -15px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #usr-header div {
+    width: 32%;
+    padding: 15px;
+    margin-left: -3px;
+    display: inline-block;
+    text-align: center;
+    border-right: 1px solid lavender;
+  }
+  
+  #usr-header div:first-child {
+    width: 34%;
+  }
+  
+  #usr-header div:last-child {
+    width: 34%;
+  }
+  
+  #footer {
+    width: 600px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+
+/** end of media query **/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #6441A4;
+  margin: 0px;
+}
+
+#header {
+  width: 150px;
+  margin: 0 auto;
+}
+
+#header img {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  padding: 40px 0 10px;
+}
+
+#header h1 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+}
+
+#main {
+  width: 100%;
+  background: #6441A4;
+  margin: 0 auto;
+  padding: 0;
+  color: white;
+}
+
+li div {
+  display: inline-block;
+  height: 50px;
+}
+
+#users ul {
+  padding: 0;
+}
+
+#users ul li {
+  list-style-type: none;
+  width: 100%;
+  height: 70px;
+  padding: 10px 20px;
+  border-bottom: 1px solid lavender;
+}
+
+#users ul li:last-child {
+  border-bottom: none;
+}
+
+#usr-header div:last-child {
+  border-right: none;
+}
+
+#active {
+  background: #4e347f;
+  margin: 0 auto;
+}
+
+.usr-link {
+  text-decoration: none;
+}
+
+.thumbnail {
+  width: 50px;
+  height: 50px;
+}
+
+.thumbnail img {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #6441A4;
+  border-radius: 50%;
+}
+
+#credit {
+  font-family: 'Bungee Hairline', cursive;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+#credit p {
+  margin: 0 auto;
+}
+
+#credit a, #credit a:link, #credit a:active, #credit a:hover, #credit a:visited {
+  color: white;
+  font-weight: bold;
+}
