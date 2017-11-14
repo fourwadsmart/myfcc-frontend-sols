@@ -1,0 +1,162 @@
+
+/*************************************
+ responsive design with media queries
+*************************************/
+@media (max-width: 550px) {
+  #title {
+    margin: 0 auto;
+  }
+  #title h1 {
+    font-size: 1em;
+    display: block;
+    margin: 0 auto;
+  }
+  #title h3 {
+    font-size: 0.8em;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #content {
+    max-width: 350px;
+    min-height: 220px;
+    margin: 0 auto;
+  }
+  
+  #gif {
+    max-width:350px;
+    max-height: 210px;
+    margin: 0 auto;
+    background-size: 90px 67.5px;
+    padding-bottom: 65px;
+  }
+  #footer-msg {
+    margin: 0 auto;
+  }
+  
+}
+
+/************************************
+        end of media query
+************************************/
+
+body {
+  background: #33495F;
+  margin: 0 auto;
+}
+#main {
+  margin: 0 auto;
+}
+
+#title {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 30px;
+  color: lavender;
+}
+
+#title h1 {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: underline;
+}
+
+#title h3 {
+  margin: 0 auto;
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+#content {
+  position: relative;
+  z-index: 1000;
+  width: 500px;
+  height: 200px;
+  margin: 0 auto;
+  background: lavender;
+  border: 5px solid #FADA5E;
+  border-radius: 10px;
+  color: gray;
+  text-align: center;
+  margin-bottom: -50px;
+}
+
+#gif {
+  background-image: url("https://goo.gl/w7818H");
+  margin-top: 1px;
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 320px 240px;
+}
+
+#content {
+  color: black;
+}
+
+#content h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  color: black;
+  margin: 10px;
+}
+
+#content h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  margin: 5px;
+}
+
+#temperature, #measure, #summary {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+}
+
+.icons {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  margin: 0;
+  padding: 5px;
+}
+
+#temp {
+  margin: 0 auto;
+}
+
+#swap {
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  color: black;
+  margin-bottom: 5px;
+}
+
+#convert {
+  padding: 5px;
+  border: 1px solid lavender;
+  background: black;
+  color: lavender;
+}
+
+#convert:focus {
+  outline: 0;
+}
+
+#footer-msg {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -75px;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 16px;
+  color: lavender;
+  font-family: 'VT323', monospace;
+}
+
+#footer-msg a:link, #footer-msg a:visited, #footer-msg a:hover, #footer-msg a:active {
+  color: lavender;
+}
