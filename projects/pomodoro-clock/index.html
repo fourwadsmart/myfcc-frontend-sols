@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pomodoro Clock</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Geo|Montserrat|Nunito|Titillium+Web|VT323" rel="stylesheet">
+        <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+        <link href="https://cdn.rawgit.com/fourwadsmart/loading-bar/master/dist/loading-bar.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main">
+          <div id="title">
+            <h1>Pomodoro Clock</h1>
+              
+            <span class="tomato"></span>
+              
+            <h3>FreeCodeCamp Project</h3>
+          </div>
+          <div id="pomodoro">
+            <div id="progress-bar">
+              <span id="taskbreak-progress">Task Time</span>
+
+              <div class="ldBar" style="width:100%;height:25px", data-stroke="data:ldbar/res,gradient(0,1,#9df,#9fd,#df9,#fd9)", data-value="00">
+              </div>
+
+            </div>
+            <div id="time-box">
+              <span id="time">
+                <span id="minutes">25</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+              </span>
+            </div>
+            <div id="pause-reset">
+              <span id="pause" class="pause-reset pause ion-play"></span>
+              <span id="reset" class="pause-reset reset ion-loop"></span>
+            </div>
+            <div id="task-break">
+              <div id="task" class="time">
+                <span class="tb-description">Task Time</span>
+                <span class="sign decrease ion-minus-circled"></span>
+                <span class="numbers">25</span>
+                <span class="sign increase ion-plus-circled"></span>
+              </div>
+
+              <div id="break" class="time">
+                <span class="tb-description">Break Time</span>
+                <span class="sign decrease ion-minus-circled"></span>
+                <span class="numbers">05</span>
+                <span class="sign increase ion-plus-circled"></span>
+              </div>
+            </div>
+          </div>
+          <div id="footer">
+            <p>Designed & coded by: <a href="https://geeklife.design" target="_blank">Wadson Fourrien</a></p>
+        </div>
+      </div>
+      <script src="https://cdn.rawgit.com/fourwadsmart/loading-bar/master/dist/loading-bar.min.js"></script>
+      <script src="main.js"></script>
+
+    </body>
+</html>
