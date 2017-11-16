@@ -207,8 +207,14 @@ body {
 
 .project {
   margin: 10px 0;
+  border-top: 1px solid lavender;
+  border-bottom: 1px solid lavender;
+}
 
-  border: 1px solid lavender;
+.desc {
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Kelly Slab', cursive;
 }
 
 #contact-form{
@@ -284,8 +290,6 @@ input[type=text], input[type=email], input[type=number] {
   text-align: center;
   border: 1px solid #dbdbdb;
 }
-
-#social-media h3 { }
 
 #social-icon {
   margin-left: -20px;
