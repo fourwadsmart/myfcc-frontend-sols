@@ -1,0 +1,345 @@
+/*****************************
+Google Fonts
+font-family: 'Dosis', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Oxygen', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'VT323', monospace;
+font-family: 'Arsenal', sans-serif;
+font-family: 'Bungee Shade', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Audiowide', cursive;
+font-family: 'Aldrich', sans-serif;
+font-family: 'Quantico', sans-serif;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Kelly Slab', cursive;
+font-family: 'Berkshire Swash', cursive;
+font-family: 'Baumans', cursive;
+*****************************/
+
+/* smooth scroll that works only on firefox */
+html { scroll-behavior: smooth; }
+
+/* media queries */
+
+/* solve header width issue on width less than 767px */
+@media (max-width: 767px) {
+  header {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    width: inherit;
+  }
+}
+
+@media (max-width: 991px) {
+  #logo {
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px solid lavender;
+  }
+  
+  #nav-bar li a {
+    padding: 0 10px;
+    font-size: 12px;
+  }
+  
+  #about {
+    margin-top: 10px;
+  }
+  #main-menu {
+    margin-left: -20px;
+  }
+  
+  #nav-bar li a {
+    color: lavender;
+    text-decoration: none;
+    border-top: 5px solid none;
+    border-bottom: 5px solid none;
+    border-radius: 5px;
+    padding: 0 10px;
+    text-align: center;
+
+  }
+  
+}
+
+@media (min-width: 992px) {
+  #nav-bar li a {
+    color: lavender;
+    text-decoration: none;
+    border-top: 5px solid none;
+    border-bottom: 5px solid none;
+    border-radius: 5px;
+    padding: 0 25px;
+
+  }
+}
+/* end of media query */
+
+
+
+body {
+  background-image: url("https://res.cloudinary.com/mydevassets/image/upload/v1508098387/bg-img_xfiusn.png");
+  background-size: 250px 250px;
+  background-attachment: fixed;
+}
+.container {
+  display: relative;
+  background-color: white;
+  color: gray;
+}
+
+.row {
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+#header {
+  border-bottom: 1px solid #101010;
+  background: black;
+  position: fixed;
+  z-index: 10000;
+}
+
+#logo {
+  font-family: 'Audiowide', cursive;
+  font-size: 32px;
+  color: lavender;
+  margin-top: 3px;
+}
+
+#logo a { color: lavender; text-decoration: none;}
+#logo a:hover { color: gray;}
+
+#main-menu {
+  font-size: 16px;
+  font-family: 'Kelly Slab', cursive;
+  font-weight: bold;
+  color: lavender;
+  cursor: pointer;
+  
+}
+
+#main-menu ul {
+  list-style-type: none;
+  margin: 15px;
+  
+}
+
+#nav-bar li {
+  display: inline-block;
+  
+}
+
+#nav-bar li a:hover, #nav-bar li a:active {
+  text-decoration: none;
+  border-top: 5px solid lavender;
+  border-bottom: 5px solid lavender;
+  
+}
+
+.nav-hover {
+  text-decoration: none;
+  border-top: 5px solid lavender;
+  border-bottom: 5px solid lavender;
+  
+}
+
+.row h1 {
+  padding-bottom: 10px;
+  padding-top: 50px;
+  font-family: 'Kelly Slab', cursive;
+  font-size: 1.8em;
+  text-decoration: underline;
+  text-align: center;
+  color: #101010;
+}
+#about-me {
+  font-size: 1.3em;
+  font-family: 'Oxygen', sans-serif;
+  margin-bottom: 10px;
+  padding: 20px;
+  color: #101010;
+
+}
+
+#my-image {
+  border: 5px solid #101010;
+  margin: 0 auto;
+  border-radius: 100%;
+  width: 70%;
+  height: 70%;
+  align: center;
+}
+
+#my-image:hover { cursor: pointer;}
+
+#about {
+  padding-top: 50px;
+  padding-bottom: 5px;
+  text-align: justify;
+}
+
+#btm-label {
+  padding: 30px 10px 10px;
+}
+
+#btm-label p {
+  font-family: 'VT323', monospace;
+  color: lavender;
+  font-size: 2em;
+  text-align: center;
+  
+}
+
+@media screen and (max-width: 600px)
+{
+  #btm-label p {
+    font-size: 14px;
+  }
+}
+
+.project {
+  margin: 10px 0;
+
+  border: 1px solid lavender;
+}
+
+#contact-form{
+  background: white;
+  padding-top: 5px;
+}
+
+#form-area {
+  background: lavender;
+  font-family: 'Dosis', sans-serif;
+  color: lavender;
+  padding: 10px;
+  border-radius: 5px;
+  
+}
+
+#form-ti {
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #444444;
+  
+}
+
+.form-group {
+  background: #191919;
+  padding: 5px 35px 10px 15px;
+  margin-bottom: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+#form-area label {}
+
+input[type=text], input[type=email], input[type=number] {
+  background: black;
+  color: lavender;
+  border: lavender solid 1px;
+  margin-left: 1em;
+}
+
+#message {
+  background: #4c4c4c;
+  color: lavender;
+  border: lavender solid 1px;
+  min-height: 200px;
+  max-height: 300px;
+  margin-left: 14px;
+}
+
+#social-cont {
+  border-radius: 5px;
+  padding: 5px 20px 20px 20px;
+}
+
+#cont-memo {
+  background: #191919;
+  color: lavender;
+  border-radius: 5px;
+  padding: 1px 10px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.4em;
+  text-align: justify;
+  
+}
+
+#social-media {
+  font-family: 'Baumans', cursive;
+  color: #4286f4;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+  border: 1px solid #dbdbdb;
+}
+
+#social-media h3 { }
+
+#social-icon {
+  margin-left: -20px;
+}
+
+#social-icon li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 5px 10px;
+}
+
+#social-icon img {
+  border-radius: 50%;
+  border: 5px solid #4286f4;
+  width: 64px;
+  height: 64px;
+  background: #191919;
+}
+
+
+footer {
+  background-color: black;
+  color: lavender;
+  font-size: 1.2em;
+  margin: 5px;
+  padding: 15px;
+  min-height: 50px;
+  font-family: 'Pacifico', cursive;
+}
+
+#foot-msg {
+  font-family: 'VT323', monospace;
+}
+
+/* creating smooth scroll. Not working yet */
+
+.section {
+  -webkit-transform: translateZ( 0 );
+  transform: translateZ( 0 );
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+}
+
+
+a[ id= "about" ]:target ~ #container div .section {
+    -webkit-transform: translateY( 0px);
+    transform: translateY( 0px );
+}
+
+a[ id= "projects" ]:target ~ #container  div .section {
+    -webkit-transform: translateY( -500px );
+    transform: translateY( -500px );
+}
+a[ id= "contact" ]:target ~ #container div .section {
+    -webkit-transform: translateY( -1000px );
+    transform: translateY( -1000px );
+}

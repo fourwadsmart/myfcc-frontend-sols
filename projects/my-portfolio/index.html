@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>My FCC Portfolio</title>
+        <link href="style/style.css" rel="stylesheet">
+        <link href="style/animate.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Aldrich|Arsenal|Audiowide|Baumans|Berkshire+Swash|Bungee+Shade|Dosis|Indie+Flower|Kelly+Slab|Lobster|Oxygen|Pacifico|Press+Start+2P|Quantico|Righteous|VT323" rel="stylesheet">
+    </head>
+    
+    <body>
+        
+        <div class="container" id="container">
+          <header class="row" id="header">
+            <div class="col-xs-12 col-md-5 col-lg-4" id="logo"><a href="#">Wadson F.</a>
+            </div>
+            <div class="col-xs-12 col-md-7 col-lg-8 text-center" id="main-menu">
+              <ul id="nav-bar">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <!--<li><a href="#more">MORE..!</a></li>-->
+              </ul>
+            </div>
+          </header>
+
+          <div class="row section" id="about">
+            <h1>ABOUT ME:</h1>
+            <div class="col-xs-12 col-md-8">
+              <div id="about-me">
+                <br>
+                <p>I am a front-end developer with up-to-date skills in front-end web technologies. I've created several demo projects which you can find in the project section.</p> 
+                <br>
+                <p>
+                  <strong>Profile:</strong> UX/UI Front-end designer.</p>
+                <p>
+                  <strong>Languages and Frameworks:</strong> HTML5, CSS3, Bootstrap, Javascript, jQuery, Sass, etc.
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <img src="https://res.cloudinary.com/mydevassets/image/upload/v1508098298/me-face_xxbpnw.jpg" class="img-responsive center-block" id="my-image">
+            </div>
+            <div id="btm-label" class="col-xs-12">
+              <p><strong>{</strong>/*********** CODING IS FUN ***********/<strong>}</strong></p>
+            </div>
+          </div>
+
+          <div class="row section" id="projects">
+            <h1>DEMO PROJECTS:</h1>
+
+            <div class="col-xs-12 col-md-6 col-lg-4 project">
+              <a href="https://codepen.io/fourwadsmart/full/EvGOQB" target="_blank">
+                <img src="https://res.cloudinary.com/mydevassets/image/upload/v1508106893/local-weather-app_ryn1l6.png" class="img-responsive center-block">
+              </a>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-4 project">
+              <a href="https://codepen.io/fourwadsmart/full/PKrWev/" target="_blank">
+                <img src="https://res.cloudinary.com/mydevassets/image/upload/v1508106893/wikipedia-viewer_hrsbm5.png" class="img-responsive center-block">
+              </a>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-4 project">
+              <a href="https://codepen.io/fourwadsmart/full/MEmydO" target="_blank">
+                <img src="https://res.cloudinary.com/mydevassets/image/upload/v1508106893/Pomodoro-Clock_jxi1gm.png" class="img-responsive center-block">
+              </a>
+            </div>
+
+           <div class="col-xs-12 col-md-6 col-lg-4 project">
+              <a href="https://codepen.io/fourwadsmart/full/GMvxMK" target="_blank">
+                <img src="https://res.cloudinary.com/mydevassets/image/upload/v1508106893/Tic-tac-toe_yci486.png" class="img-responsive center-block">
+              </a>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-4 project">
+              <a href="https://codepen.io/fourwadsmart/full/JJdMOM" target="_blank">
+                <img src="https://res.cloudinary.com/mydevassets/image/upload/v1508106893/random-quote-machine_okbaqa.png" class="img-responsive center-block">
+              </a>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-4 project">
+              <a href="https://codepen.io/fourwadsmart/full/gGLzJb" target="_blank">
+                <img src="https://res.cloudinary.com/mydevassets/image/upload/v1508106893/js-calculator_dccquz.png" class="img-responsive center-block">
+              </a>
+            </div>
+
+            <div id="btm-label" class="col-xs-12">
+              <p><strong>{</strong>/*********** CODING IS FUN ***********/<strong>}</strong></p>
+            </div>
+          </div>
+
+          <div class="row section" id="contact">
+            <h1>CONTACT:</h1>
+            <div class="col-xs-12 col-md-6 space" id="contact-form">
+              <form action="" method="post">
+                <fieldset id="form-area">
+                  <h3 id="form-ti">~ CONTACT FORM ~</h3>
+                  <div class="form-group">
+                    <label for="full-name">FULL NAME:</label>
+                    <input type="text" placeholder="Full name..." id="full-name" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">EMAIL:</label>
+                    <input type="email" placeholder="Email..." id="email" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-number">PHONE:</label>
+                    <input type="number" placeholder="Contact number..." id="contact-number" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="message">MESSAGE:</label>
+                    <textarea placeholder="Write your message..." id="message" class="form-control input-lg" required></textarea>
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-primary input-lg">SEND MESSAGE</button>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <div class="col-xs-12 col-md-6 space" id="social-cont">
+              <div id="cont-memo">
+                <h3>NOTE:</h3>
+                <p>Need a front-end developer for a project? Contact me anytime through the contact form. I will reply ASAP. If you wish to contact me by other means my social contacts, phone number and email are also listed.</p>
+              </div>
+              <div id="social-media">
+                <h3>Reach me on social media</h3>
+                <ul id="social-icon">
+                  <li class="animated infinite pulse"><a href="https://www.linkedin.com/in/wadson-fourrien?" target="_blank"><img src="https://res.cloudinary.com/mydevassets/image/upload/v1508088418/LinkedIn-icon_kfhazo.png"></a></li>
+                  <li class="animated infinite pulse"><a href="https://github.com/fourwadsmart" target="_blank"><img src="https://res.cloudinary.com/mydevassets/image/upload/v1508088418/GitHub-icon_vmy7tb.png"></a></li>
+                  <li class="animated infinite pulse"><a href="https://twitter.com/fourwadsmart" target="_blank"><img src="https://res.cloudinary.com/mydevassets/image/upload/v1508088418/twitter-icon_sg11ze.png"></a></li>
+                  <li class="animated infinite pulse"><a href="https://www.youtube.com/channel/UCwFPThNL89OY7e-LBkZ4e0A?guided_help_flow=3" target="_blank"><img src="https://res.cloudinary.com/mydevassets/image/upload/v1508088418/Youtube-icon_boq3fs.png"></a></li>
+                </ul>
+                <p>I am almost always available.</p>
+              </div>
+            </div>
+            <div id="btm-label" class="col-xs-12">
+              <p><strong>{</strong>/*********** CODING IS FUN ***********/<strong>}</strong></p>
+            </div>
+          </div>
+
+          <footer class="row" id="foot-area">
+            <div class="col-xs-12 col-md-6" id="foot-msg">
+              Coded with love by <a href="https://www.youtube.com/channel/UCwFPThNL89OY7e-LBkZ4e0A?guided_help_flow=3">Wadson Fourrien</a> as a Free Code Camp project.
+            </div>
+            <div class="col-xs-12 col-md-6">
+              email: fourwadsmart@gmail.com -
+              Phone: +1 809 204-4515
+            </div>
+          </footer>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="script/main.js"></script>
+    </body>
+    
+</html>
