@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Aldrich|Orbitron|Quantico|VT323');
+
+@media (max-width: 405px) {
+  #calc {
+    background: black;
+    width: 320px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 10px 10px 5px 5px;
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(89,89,89,1);
+    -moz-box-shadow: 0px 0px 10px 3px rgba(89,89,89,1);
+    box-shadow: 0px 0px 10px 3px rgba(89,89,89,1);
+  }
+  #others {
+    width: 240px;
+    top: -5px;
+    left: -5px;
+  }
+
+  #numbers {
+    width: 240px;
+    top: 55px;
+    left: -5px;
+  }
+
+  #operators {
+    width: 80px;
+    top: -5px;
+    right: 2px;
+  }
+  
+  .other {
+    width: 32%;
+  }
+
+  .number {
+    width: 32%;
+  }
+
+  .operator {
+    width: 96%;
+    display: block;
+  }
+
+  .zero {
+    width: 65.8%;
+    border-bottom: 1px solid #1c3448;
+  }
+  
+  #result {
+    height: 60px;
+    font-size: 40px;
+  }
+
+  #accumulator {
+    height: 40px;
+    font-size: 16px;
+  }
+  
+}
+
+
+/* for screen bigger than 405px */
+
+@media (min-width: 406px) {
+  
+  #calc {
+    background: black;
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 10px 10px 5px 5px;
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(89,89,89,1);
+    -moz-box-shadow: 0px 0px 10px 3px rgba(89,89,89,1);
+    box-shadow: 0px 0px 10px 3px rgba(89,89,89,1);
+  }
+  
+  #others {
+    width: 300px;
+    top: -5px;
+    left: -5px;
+  }
+
+  #numbers {
+    width: 300px;
+    top: 55px;
+    left: -5px;
+  }
+
+  #operators {
+    width: 100px;
+    top: -5px;
+    right: 1px;
+  }
+
+  .other {
+    width: 32.4%;
+  }
+
+  .number {
+    width: 32.4%;
+  }
+
+  .operator {
+    width: 96%;
+    display: block;
+  }
+
+  .zero {
+    width: 66%;
+    border-bottom: 1px solid #1c3448;
+  }
+  
+  .dot {
+    width: 32.5%;
+  }
+  
+  #result {
+    height: 60px;
+    font-size: 50px;
+    text-overflow: fade;
+  }
+
+  #accumulator {
+    height: 40px;
+    font-size: 20px;
+  }
+} /* end of media query rules*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+ background: #d1e0e0;
+}
+
+#header {
+  overflow: hidden;
+}
+
+#title {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  margin: 0 auto;
+  font-size: 14px;
+  text-align: center;
+  color: lavender;
+  font-family: 'Aldrich', sans-serif;
+  background: #660000;
+}
+
+#title h2 {
+  margin: 0 auto;
+}
+
+#screen {
+  width: 90%;
+  height: 100px;
+  margin: 5%;
+  border-radius: 5px;
+  background: #00FFCC;
+  -webkit-box-shadow: inset 0px 0px 15px 0px rgba(112,112,112,1);
+  -moz-box-shadow: inset 0px 0px 15px 0px rgba(112,112,112,1);
+  box-shadow: inset 0px 0px 15px 0px rgba(112,112,112,1);
+  overflow: hidden;
+}
+
+#screen span {
+  display: block;
+  text-align: right;
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#body {
+  position: relative;
+  padding-top: 5px;
+  width: 100%;
+  height: 310px;
+  color: lavender;
+  margin-left: 5px;
+}
+
+#body div {
+  position: absolute;
+  display: inline-block;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px;
+  background: #070d12;
+  border-top: 1px solid #1c3448;
+  font-family: 'Aldrich', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  height: 60px; /* all btn same height */
+  cursor: pointer;
+}
+
+ .dot, .equal {
+   border-bottom: 1px solid #1c3448;
+ }
+
+.ce, .ac {
+  background: #660000;
+}
+
+#footer {
+  width: 95%;
+  height: 35px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-family: 'Quantico', sans-serif;
+  text-align: center;
+  line-height: 10px;
+}
+
+#credit p:last-child {
+  font-family: 'VT323', monospace;
+}
