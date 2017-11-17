@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  background-color: lavender;
+}
+
+@media (max-width: 500px) {
+ #main {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+    background-color: #000033;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px #202020;  
+  }
+
+  #game-box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    top: 10px;
+    background-color: #FFFFCC;
+    border-radius: 5px;
+  }
+
+  .box {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    left: 12px;
+    top: 7px;
+    width: 95px;
+    height: 95px;
+    padding: 10px;
+    font-size: 40px;
+    font-family: 'Nosifer', cursive;
+    color: #990000;
+    border-bottom: 5px solid #000033;
+    border-right: 5px solid #000033;
+  }
+  
+  .players {
+    position: relative;
+    top: 80px;
+    left: 15%;
+    display: inline-block; /* display: inline-block; */
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    padding: 5px 20px;
+    font-size: 50px;
+    font-family: 'Nosifer', cursive;
+    color: #990000;
+    border: 8px solid #990000;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 500px) {
+  #main {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #000033;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px #202020;  
+
+  }
+
+  #game-box {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+    top: 25px;
+    background-color: #FFFFCC;
+    border-radius: 5px;
+  }
+
+  .box {
+    position: relative;
+    /* toggle to display: inline-block when not playing */
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    left: 12px;
+    top: 7px;
+    width: 145px;
+    height: 145px;
+    padding: 20px;
+    font-size: 70px;
+    font-family: 'Nosifer', cursive;
+    color: #990000;
+    border-bottom: 5px solid #000033;
+    border-right: 5px solid #000033;
+  }
+ 
+  .players {
+    position: relative;
+    top: 100px;
+    left: 26%;
+    display: inline-block; /* display: inline-block */
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    padding: 5px 20px;
+    font-size: 50px;
+    font-family: 'Nosifer', cursive;
+    color: #990000;
+    border: 8px solid #990000;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+}
+/* end of media query */
+
+#title h1 {
+  position: relative;
+  width: 100%;
+  line-height: 26px;
+  font-size: 26px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: 'Nosifer', cursive;
+  color: #990000;
+
+}
+
+#title h2 {
+  position: relative;
+  width: 100%;
+  line-height: 24px;
+  font-size: 18px;
+  color: #990000;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+}
+
+/* bottom side box */
+.seven, .eight, .nine {
+  border-bottom: none;
+}
+
+/* right side box */
+.three, .six, .nine {
+  border-right: none;
+}
+
+/*remove extra margin */
+.two, .five, .eight {
+  left: -2px;
+}
+/* middle left side bar */
+.three, .six, .nine {
+  left: -9px;
+}
+
+#footer {
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  
+}
+
+#footer p:first-child {
+  font-family: 'Quantico', sans-serif;
+  font-size: 18px;
+  line-height: 10px;
+}
+#footer p:last-child {
+  font-family: 'VT323', monospace;
+  font-size: 16px;
+  line-height: 5px;
+}
+
+
+/* game starting: pick a player */
+#instruc {
+  display: block;
+  position: relative;
+  top: 60px;
+  bottom: 30px;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  font-size: 26px;
+  margin-top: 5px;
+  color: #000033;
+}
+
+#end {
+  position: relative;
+  margin-top: 5px;
+  top: 100px;
+  padding: 30px;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  font-family: 'Nosifer', cursive;
+  font-size: 20px;
+  color: #990000;
+  
+}
