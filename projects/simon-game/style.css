@@ -1,0 +1,342 @@
+/* MEDIA QUERIES */
+@media (max-width: 454px) {
+  #simon {
+    width: 290px;
+    height: 290px;
+    border: 10px solid #303030;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  #center {
+    width: 180px;
+    height: 180px;
+  }
+  
+  h1 {
+    height: 25px;
+    font-size: 25px;
+    margin: 20px 0 5px;
+  }
+  
+  h3 {
+    height: 10px;
+    font-size: 8px;
+  }
+  
+  #controllers {
+    font-size: 8px;
+  }
+  
+  #play-btns {
+    height: 50px;
+  }
+  
+  .cont {
+    width: 50px;
+    height: 40px;
+  }
+  
+  #count {
+    width: 45px;
+    height: 15px;
+    padding: 5px 0;
+    font-size: 14px;
+  }
+  
+  #start, #strict {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+  }
+  
+  #light {
+    width: 6px;
+    height: 6px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+  
+  #switch {
+    margin: 15px;
+  }
+  
+  #off-on {
+    width: 40px;
+    height: 20px;
+  }
+  
+  #switch-btn {
+    width: 20px;
+    height: 18px;
+    margin: 0 auto;
+    margin-bottom: -7px;
+  }
+  
+}
+
+@media (min-width: 455px) {
+  #simon {
+    width: 450px;
+    height: 450px;
+    border: 20px solid #303030;
+  }
+  
+  #center {
+    width: 250px;
+    height: 250px;
+  }
+  
+  h1 {
+    height: 40px;
+    font-size: 40px;
+    margin: 30px 0 5px;
+  }
+  
+  h3 {
+    height: 15px;
+    font-size: 14px;
+  }
+  
+  #controllers {
+    font-size: 12px;
+  }
+  
+  #play-btns {
+    height: 70px;
+  }
+  
+  .cont {
+    width: 60px;
+    height: 50px;
+  }
+  
+  #count {
+    width: 52px;
+    height: 20px;
+    padding: 5px 0;
+    font-size: 16px;
+  }
+  
+  #start, #strict {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+  }
+  
+  #light {
+    width: 10px;
+    height: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  
+  #switch {
+    margin: 15px;
+  }
+  
+  #off-on {
+    width: 40px;
+    height: 20px;
+  }
+  
+  #switch-btn {
+   width: 20px;
+   height: 18px;
+   margin-bottom: -5px;
+  }
+  
+}
+
+/* END OF MEDIA QUERIES */
+
+body {
+  background: #FFDEAD;
+  background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+#simon {
+  -webkit-box-shadow: 0px 0px 15px 2px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 15px 2px rgba(0,0,0,1);
+  box-shadow: 0px 0px 15px 2px rgba(0,0,0,1);
+  position: relative;
+  background: #303030;
+  top: 30px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.side-btn {
+  background-image: url("https://www.transparenttextures.com/patterns/gun-metal.png") !important;
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  display: inline-block;
+  width: 48%;
+  height: 48%;
+}
+
+#green {
+  background: #007700;
+  float: left;
+  margin-bottom: 2%;
+  border-top-left-radius: 100%;
+}
+
+#red {
+  background: #990000;
+  float: right;
+  margin-bottom: 2%;
+  border-top-right-radius: 100%;
+}
+
+#yellow {
+  background: #FFCC00;
+  float: left;
+  margin-top: 2%;
+  border-bottom-left-radius: 100%;
+}
+
+#blue {
+  background: #003399;
+  float: right;
+  margin-top: 2%;
+  border-bottom-right-radius: 100%;
+}
+
+#center {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+  position: absolute;
+  background-color: white;
+  background-image: url("https://www.transparenttextures.com/patterns/gradient-squares.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  border: 10px solid #303030;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  border-radius: 50%;
+  color: #303030;
+}
+
+h1 {
+  width: 100%;
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Economica', sans-serif;
+  text-align: center;
+}
+
+#tm {
+  display: inline-block;
+  font-size: 10px;
+  top: -20px;
+}
+
+#controllers {
+  font-family: 'Exo', sans-serif;
+  text-align: center;
+}
+
+#play-btns {
+  width: 100%;
+}
+
+.cont {
+  display: inline-block;
+}
+
+#count {
+  display: block;
+  margin: 0 auto;
+  background: #200000;
+  border: 3px solid #303030;
+  border-radius: 10px;
+  font-family: 'Play', sans-serif;
+}
+
+#light {
+  display: block;
+  border: 2px solid #303030;
+  border-radius: 50%;
+}
+
+#start, #strict {
+  display: block;
+  margin: 0 auto;
+  background: #B00000;
+  border: 3px solid #303030;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#strict {
+  background: #FFCC00;
+}
+
+#switch span {
+  display: inline-block;  
+}
+
+#off-on {
+  margin: 0 2px;
+  margin-bottom: -5px;
+  background: #080808;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+#switch-btn {
+  background: #0000AA;
+  border: 1px solid #303030;
+  border-radius: 5px;
+  
+}
+
+.on {
+  float: right;
+}
+
+.off {
+  float: left;
+}
+
+.red {
+  color: red;
+}
+
+.gray {
+  color: #303030;
+}
+
+.bg-red {
+  background: #FF0000 !important;
+  background-image: url("https://www.transparenttextures.com/patterns/gun-metal.png") !important;
+}
+
+.bg-green {
+  background: #00FF00 !important;
+  background-image: url("https://www.transparenttextures.com/patterns/gun-metal.png") !important;
+}
+
+.bg-yellow {
+  background: #FFFF00 !important;
+  background-image: url("https://www.transparenttextures.com/patterns/gun-metal.png") !important;
+}
+
+.bg-blue {
+  background: #0000FF !important;
+  background-image: url("https://www.transparenttextures.com/patterns/gun-metal.png") !important;
+}
+
+.bg-gray {
+  background: #303030;
+}
