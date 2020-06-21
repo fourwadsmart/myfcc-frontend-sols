@@ -25,3 +25,31 @@ function whatIsInAName(collection, source) {
 
 whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
 
+
+
+// new solution implemented
+
+function whatIsInAName(collection, source) {
+  let arr = [];
+  // Only change code below this line
+  let src_k = Object.keys(source);
+
+  arr = collection.filter((obj) => {
+    let found = true;
+    src_k.forEach((n) => {
+      if(source[n] != obj[n]) {
+        found = false
+      }
+    });
+    return found;
+  });
+  // Only change code above this line
+  console.log(arr);
+  return arr; 
+}
+
+whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
+
+
+
+
