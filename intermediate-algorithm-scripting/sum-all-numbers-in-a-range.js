@@ -16,3 +16,4 @@ function sumAll(arr) {
   return sum; 
 }
 sumAll([5, 10]);
+
