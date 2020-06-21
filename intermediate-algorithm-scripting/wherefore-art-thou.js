@@ -5,21 +5,26 @@
       and returns an array of all objects 
       that have matching property and 
       value pairs (second argument).
+      Solutions UPDATED
     ==================================== **/
 
 function whatIsInAName(collection, source) {
   // What's in a name?
-  let arr = [];
   let src = Object.keys(source);
+  let arr = [];
+
   for(let i = 0; i < collection.length; i++) {
-    let found = false; // checker to see if every source is in collection
-    for(j = 0; j < src.length; j++) {
-      if(collection[i].hasOwnProperty(src[j]) && collection[i][src[j]] == source[src[j]])       { found = true; } // return true if source key:values are equal
-      else { found = false;} // return false if source key:values are not equal
+    let found = true;
+    for(let j = 0; j < src.length; j++) {
+      if(source[src[j]] != collection[i][src[j]]) {
+        found = false;
+        break;
+      }
     }
-    if(found === true) { arr.push(collection[i]);} // push the object to array if true
+    if(found === true) {
+      arr.push(collection[i]);
+    } 
   }
-  // Only change code above this line
   return arr;
 }
 
@@ -30,11 +35,8 @@ whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: 
 // new solution implemented
 
 function whatIsInAName(collection, source) {
-  let arr = [];
-  // Only change code below this line
   let src_k = Object.keys(source);
-
-  arr = collection.filter((obj) => {
+  let arr = collection.filter((obj) => {
     let found = true;
     src_k.forEach((n) => {
       if(source[n] != obj[n]) {
@@ -43,7 +45,7 @@ function whatIsInAName(collection, source) {
     });
     return found;
   });
-  // Only change code above this line
+  
   console.log(arr);
   return arr; 
 }
