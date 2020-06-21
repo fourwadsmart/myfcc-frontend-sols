@@ -25,3 +25,27 @@ function diffArray(arr1, arr2) {
 }
 
 diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+
+
+// same solutions with array filter method
+
+function diffArray(arr1, arr2) {
+  var newArr = []
+  
+  .concat(arr1.filter((u) => {
+    return arr2.indexOf(u) == -1;
+  }))
+  
+  .concat(arr2.filter((u) => {
+    return arr1.indexOf(u) == -1;
+  }));
+
+
+  return newArr;
+}
+
+
+
+
+
+
