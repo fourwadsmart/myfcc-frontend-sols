@@ -9,19 +9,21 @@
 function translatePigLatin(str) {
   let vowels = ["a", "e", "i", "o", "u"];
   let strArr = str.split("");
+
   if (vowels.includes(strArr[0])) {
     strArr.push("w");
+    return strArr.join("") +"ay";
   }
   else {
     let num = 0;
     while(!vowels.includes(strArr[0]) && num < str.length) {
+      num++;
       strArr.push(strArr.shift());
     }
   }
   return strArr.join("") +"ay";
 }
-
-translatePigLatin("paragraphs");
+translatePigLatin("rhythm");
 
 
 // NEW SOLUTIONN WITH FOR LOOP
