@@ -24,3 +24,35 @@ function translatePigLatin(str) {
 
 translatePigLatin("paragraphs");
 
+
+
+// New solution with for loop
+
+
+
+function translatePigLatin(str) {
+  let vowels = ["a", "e", "i", "o", "u"];
+  let strArr = str.split("");
+
+  if (vowels.includes(strArr[0])) {
+    return strArr.join("") + "way";
+
+  }
+  else {
+    let newStrArr = [...strArr];
+    let consonant = true;
+    for(let i = 0; i < strArr.length; i++) {
+      if (vowels.includes(strArr[i])) {consonant = false; }
+      
+      if (consonant) {
+        let removedcons = newStrArr.shift();
+        newStrArr.push(removedcons);
+      }
+    }
+    strArr = [...newStrArr];
+  }
+  return strArr.join("") +"ay";
+}
+
+console.log(translatePigLatin("california"));
+
