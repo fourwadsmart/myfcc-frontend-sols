@@ -54,3 +54,14 @@ function translatePigLatin(str) {
 
 console.log(translatePigLatin("california"));
 
+
+// A SOLUTION ON FREECODECAMP FORUM WITH REGULAR EXPRESSIONS
+function translatePigLatin(str) {
+  return str
+    .replace(/^[aeiou]\w*/, "$&way")
+    .replace(/(^[^aeiou]+)(\w*)/, "$2$1ay");
+}
+
+// test here
+translatePigLatin("consonant");
+
