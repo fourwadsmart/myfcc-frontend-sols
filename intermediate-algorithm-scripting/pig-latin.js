@@ -4,31 +4,27 @@
     ==================================== **/
 
 
+// CODE UPDATE
+
 function translatePigLatin(str) {
-  var vowels = ["a", "e", "i", "o", "u"];
-  str = str.split("");
-  if (vowels.includes(str[0])) {
-    str.push("w");
+  let vowels = ["a", "e", "i", "o", "u"];
+  let strArr = str.split("");
+  if (vowels.includes(strArr[0])) {
+    strArr.push("w");
   }
   else {
-    var num = 0;
-    while(vowels.includes(str[num]) === false) {
-      str.push(str[num]);
-      str.shift();
+    let num = 0;
+    while(!vowels.includes(strArr[0]) && num < str.length) {
+      strArr.push(strArr.shift());
     }
   }
-  
-  str = str.join("") +"ay";
-  return str;
+  return strArr.join("") +"ay";
 }
 
 translatePigLatin("paragraphs");
 
 
-
-// New solution with for loop
-
-
+// NEW SOLUTIONN WITH FOR LOOP
 
 function translatePigLatin(str) {
   let vowels = ["a", "e", "i", "o", "u"];
