@@ -30,7 +30,7 @@ myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
 
 
 
-// NEW SOLUTION ~ 2020
+// NEW SOLUTION WIITH REGULAR EXPRESSION ~ 2020
 
 function myReplace(str, before, after) {
   if(before[0] == before[0].toUpperCase()) {
