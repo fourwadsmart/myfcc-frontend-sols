@@ -17,7 +17,7 @@ function translatePigLatin(str) {
   else {
     let num = 0;
     while(!vowels.includes(strArr[0]) && num < str.length) {
-      num++;
+      num += 1;
       strArr.push(strArr.shift());
     }
   }
