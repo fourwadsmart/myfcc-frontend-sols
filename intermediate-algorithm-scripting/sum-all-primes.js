@@ -29,3 +29,26 @@ function sumPrimes(num) {
 }
 
 sumPrimes(10);
+
+
+// NEW SOLUTION THAT WORKS WITH NO EXTRA HACKS
+
+function sumPrimes(num) {
+  let sum = 0, prime;
+
+  if (num >= 2) {
+    for (let i = 2; i <= num; i++) {
+      let prime = true, n = 2;
+      while (n <= i) {
+        if(i % n == 0 && n != i) {
+          prime = false;
+        }
+        n += 1;
+      }
+      if(prime) {sum += i}
+    }
+  }
+  return sum;
+}
+
+sumPrimes(5); 
