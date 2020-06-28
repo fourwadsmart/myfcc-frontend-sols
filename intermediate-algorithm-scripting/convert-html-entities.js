@@ -19,3 +19,17 @@ function convertHTML(str) {
 
 convertHTML("Hamburgers < Pizza < Tacos");
 
+
+// NEW SOLUTION WITH MAP ~ 2020
+
+function convertHTML(str) {
+  // &colon;&rpar;
+  let htmlenti = {"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&apos;"};
+  let strArr = str.split('');
+
+  return strArr.map((a) => {
+    return htmlenti[a] == undefined ? a : htmlenti[a];
+  }).join("");
+}
+
+convertHTML("Hamburgers < Pizza < Tacos");  
