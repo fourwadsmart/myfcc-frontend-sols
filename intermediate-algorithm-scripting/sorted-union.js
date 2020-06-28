@@ -17,3 +17,17 @@ function uniteUnique(arr) {
 
 uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
 
+
+// NEW SOLUTION WITH FILTER ~ 2020
+
+function uniteUnique(...arr) {
+  let args = [];
+  for(let i = 0; i < arguments.length; i++) {
+    args = args.concat(arr[i]); // create single array
+  }
+  // filter: remove duplicate
+  return args.filter((a, e) => args.indexOf(a) === e);
+}
+
+uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+
