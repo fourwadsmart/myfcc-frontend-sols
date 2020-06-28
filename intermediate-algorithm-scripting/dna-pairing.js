@@ -34,4 +34,12 @@ function pairElement(str) {
 pairElement("ATCGA");
 
 
+// NEW SOLUTION WITH MAP FUNCTION ~ 2020
+
+function pairElement(str) {
+  let missPair = {"A": ["A", "T"], "C": ["C", "G"], "G": ["G", "C"], "T": ["T", "A"]};
+  let arr = [...str];
+  return arr.map((strand) => missPair[strand] );
+}
+pairElement("ATCGA");
 
