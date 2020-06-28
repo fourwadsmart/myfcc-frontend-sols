@@ -1,6 +1,6 @@
 /** ====================================
             - OLD SOLUTION -
-         Pig Latin - old solution
+         DNA PAIRING - OLD SOLUTION
     ==================================== **/
 
 
@@ -18,3 +18,20 @@ function pairElement(str) {
 }
 
 pairElement("ATCGA");
+
+
+// NEW SOLUTION WITH ONE FOR LOOP ~ 2020
+
+function pairElement(str) {
+  let missPair = {"A": ["A", "T"], "C": ["C", "G"], "G": ["G", "C"], "T": ["T", "A"]};
+  let arr = [];
+  for(let i = 0; i < str.length; i++) {
+    arr.push(missPair[str[i]]);
+  }
+  return arr;
+}
+
+pairElement("ATCGA");
+
+
+
