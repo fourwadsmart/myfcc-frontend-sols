@@ -24,3 +24,17 @@ function fearNotLetter(str) {
 
 fearNotLetter("bcd");
 
+// CODE REFACTORED ~ 2020
+// CLEAN AND MORE READABLE
+
+function fearNotLetter(str) {
+  var charCode = str[0].charCodeAt();
+
+  for(let i=0; i<str.length; i++) {
+    if(str[i].charCodeAt() !== charCode) {
+      return String.fromCharCode(charCode);
+    }
+    charCode++; 
+  }
+  return undefined;
+}
