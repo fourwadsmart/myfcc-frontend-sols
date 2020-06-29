@@ -42,6 +42,24 @@ function palindrome(str) {
 
 palindrome("_EYEEY*****");
 
+// CODE REFACTORED ~ 2020
+
+function palindrome(str) {
+  // Good luck!
+  let strvd, arr;
+  let nonAlphNum = /[^a-z0-9]/gi;
+  str = str.replace(nonAlphNum, "").toLowerCase(); 
+  arr = str.split("");
+  // reverse and convert back to string.
+  strvd = arr.reverse().reduce(function(prev, curr) {
+    return strvd = prev + curr;
+  });
+  return str === strvd ? true : false;
+}
+
+palindrome("_EYEEY*****");
+
+
 
 
 /** ====================================
