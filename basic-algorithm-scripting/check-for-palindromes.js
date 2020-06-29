@@ -67,19 +67,13 @@ palindrome("_EYEEY*****");
              Refactoring my code
     ==================================== **/
 
+// non-mutable solution
 
 function palindrome(str) {
-  var bool = false;
-  var nonAlphaNum = /[^a-z0-9]/g; // none-alphanumeric RegEx
-  
-  str = str.toLowerCase().replace(nonAlphaNum, "");
-  var strRev = str.split("").reverse().join("");
-  
-  if (str == strRev) { 
-    bool = true; 
-  }
-  
-return bool;
+  let newStr, strRev, nonAlphaNum = /[^a-z0-9]/g;
+  newStr = str.toLowerCase().replace(nonAlphaNum, "");
+  strRev = newStr.split("").reverse().join("");
+  return newStr === strRev;
 
 }
 
